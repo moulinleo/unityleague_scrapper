@@ -63,26 +63,70 @@
     body { padding: 0.5em; }
     h1 { font-size: 1.2em; }
     table.dataTable { font-size: 0.93em; }
-  }
+  }.info-bubble {
+  position: relative;
+  display: inline-block;
+  
+  #update-time {
+  position: absolute;
+  top: 18px;
+  left: 24px;
+  font-size: 1.05em;
+  color: #555;
+  background: rgba(255,255,255,0.7);
+  padding: 4px 12px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px #0001;
+  z-index: 100;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+}
+
 </style>
 
 </head>
 <body>
-
+<div id="update-time"></div>
 <h1>🏆 Custom Leaderboard Unity League 2025 - Weekly Draft 🇧🇪</h1>
 <table id="leaderboard" class="display responsive nowrap" style="width:100%">
   <thead>
     <tr>
       <th>Rank</th>
       <th>Nom</th>
-      <th>Points Unity</th>
+      
       <th>W</th>
       <th>L</th>
       <th>D</th>
       <th>Matchs</th>
-      <th>Winrate (%)</th>
-      <th>#Events</th>
-      <th>PerfScore</th>
+      <th>
+  Winrate (%)
+  <span class="info-bubble" title="Pourcentage de victoires sur l'ensemble des matchs joués lors des Weekly Draft. (total_wins + 0.5 * total_draws) / total_matches * 100">
+    <i class="fa fa-info-circle"></i>
+  </span>
+</th>
+      <th>#Events
+<span class="info-bubble" title="Nombre total d'événements joués de type Weekly Draft.">
+    <i class="fa fa-info-circle"></i>
+  </span>
+
+      </th>
+      <th>
+      PerfScore
+      <span class="info-bubble" title="Performance Score, basé sur les performances en pondérant le winrate par le nombre de matchs dans les Weekly Draft. Perf_score = winrate * log(1 + total_matches)">
+    <i class="fa fa-info-circle"></i>
+  </span>
+      </th>
+      <th>Points Unity
+          <span class="info-bubble" title="Points de classement, pour tous les formats, sur le site https://unityleague.gg/.">
+    <i class="fa fa-info-circle"></i>
+  </span>
+      </th>
+      <th>
+  Profil Unity
+  <span class="info-bubble" title="Lien direct vers le profil du joueur sur unityleague.gg.">
+    <i class="fa fa-info-circle"></i>
+  </span>
+</th>
     </tr>
   </thead>
   <tbody>
@@ -109,7 +153,6 @@
                   return data;
                 } },
             { data: "name" },
-            { data: "points" },
             { data: "wins" },
             { data: "losses" },
             { data: "draws" },
@@ -119,11 +162,19 @@
                   return data.toFixed(1) + " %";
                 } },
             { data: "limited_events" },
-            { data: "perf_score" }
+            { data: "perf_score" },
+            { data: "points" },
+            {data: "profile_url",
+              orderable: false,
+              render: function(data, type, row) {
+                return `<a class="player-link" href="${data}" target="_blank" title="Voir le profil de ${row.name}"><i class="fa fa-external-link-alt"></i> Profil</a>`;
+              }
+            }
+
           ],
           pageLength: 100, 
           responsive: true,
-          order: [[9, 'desc']],
+          order: [[8, 'desc']],
           language: {
             search: "🔍 Recherche:",
             lengthMenu: "Afficher _MENU_ joueurs",
