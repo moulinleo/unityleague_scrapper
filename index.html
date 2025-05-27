@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Leaderboard Limited MTG</title>
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" />
+  <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.dataTables.min.css"/>
+  <style>
+    body { font-family: sans-serif; background-color: #f4f4f4; padding: 2em; }
+    h1 { text-align: center; margin-bottom: 1em; }
+    table.dataTable thead th { background-color: #444; color: #fff; }
+  </style>
+</head>
+<body>
+
+<h1>🏆 Custom Leaderboard Unity League 2025 - Weekly Draft 🇧🇪</h1>
+<table id="leaderboard" class="display responsive nowrap" style="width:100%">
+  <thead>
+    <tr>
+      <th>Rank</th>
+      <th>Nom</th>
+      <th>Points_unity_league</th>
+      <th>W</th>
+      <th>L</th>
+      <th>D</th>
+      <th>Matchs</th>
+      <th>Winrate (%)</th>
+      <th>#Events</th>
+      <th>PerfScore</th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
+
+<script>
+  $(document).ready(function() {
+    fetch('leaderboard.json')
+      .then(response => response.json())
+      .then(data => {
+        $('#leaderboard').DataTable({
+          data: data,
+          columns: [
+            { data: "rank",
+                render: function(data, type, row) {
+                  if (data == 1) return "👑 1";
+                  if (data == 2) return "🥈 2";
+                  if (data == 3) return "🥉 3";
+                  return data;
+                } },
+            { data: "name" },
+            { data: "points" },
+            { data: "wins" },
+            { data: "losses" },
+            { data: "draws" },
+            { data: "matches" },
+            {  data: "winrate",
+                render: function(data) {
+                  return data.toFixed(1) + " %";
+                } },
+            { data: "limited_events" },
+            { data: "perf_score" }
+          ],
+          responsive: true,
+          order: [[9, 'desc']],
+          language: {
+            search: "🔍 Recherche:",
+            lengthMenu: "Afficher _MENU_ joueurs",
+            info: "Affichage de _START_ à _END_ sur _TOTAL_",
+            paginate: {
+              next: "Suivant",
+              previous: "Précédent"
+            }
+          }
+        });
+      })
+      .catch(error => {
+        console.error("Erreur de chargement JSON :", error);
+        alert("Impossible de charger les données du leaderboard.");
+      });
+  });
+</script>
+
+</body>
+</html>
