@@ -93,7 +93,7 @@ def main():
     df = pd.DataFrame(results)
     
     # Timestamp for update
-    df['update_time'] = pd.Timestamp.now()
+    df['update_time'] = pd.Timestamp.now(tz='Europe/Paris')
     df['update_time'] = df['update_time'].dt.strftime('%Y-%m-%d %H:%M:%S')
     
     df["matches"] = df["matches"].astype(float)
