@@ -2,88 +2,97 @@
 <html lang="fr">
 <head>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/all.min.css">
   <meta charset="UTF-8" />
   <title>Leaderboard Limited MTG</title>
   <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" />
   <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.dataTables.min.css"/>
-<style>
-  body {
-    font-family: 'Montserrat', Arial, sans-serif;
-    background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
-    padding: 2em;
-    min-height: 100vh;
-  }
-  h1 {
-    text-align: center;
-    margin-bottom: 1.5em;
-    font-weight: 700;
-    color: #222;
-    letter-spacing: 0.01em;
-    text-shadow: 0 2px 8px #fff6;
-  }
-  table.dataTable {
-    background: #fff;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 8px 32px #0002;
-  }
-  table.dataTable thead th {
-    background: #222c;
-    color: #fff;
-    font-weight: 700;
-    font-size: 1.07em;
-    letter-spacing: 0.02em;
-  }
-  table.dataTable tbody tr {
-    transition: background 0.2s;
-  }
-  table.dataTable tbody tr:hover {
-    background: #f0f8ff !important;
-  }
-  .player-link {
-    color: #0074d9;
-    font-weight: 600;
-    text-decoration: none;
-    transition: color 0.2s;
-  }
-  .player-link:hover {
-    color: #005fa3;
-    text-decoration: underline;
-  }
-  .rank-crown {
-    font-size: 1.2em;
-    margin-right: 0.2em;
-  }
-  .fa-trophy {
-    color: #bba31c;
-    margin-left: 0.2em;
-  }
-  @media (max-width: 600px) {
-    body { padding: 0.5em; }
-    h1 { font-size: 1.2em; }
-    table.dataTable { font-size: 0.93em; }
-  }.info-bubble {
-  position: relative;
-  display: inline-block;
-  
-  #update-time {
-  position: absolute;
-  top: 18px;
-  left: 24px;
-  font-size: 1.05em;
-  color: #555;
-  background: rgba(255,255,255,0.7);
-  padding: 4px 12px;
-  border-radius: 8px;
-  box-shadow: 0 1px 4px #0001;
-  z-index: 100;
-  font-family: 'Montserrat', Arial, sans-serif;
-}
-}
-
-</style>
-
+  <style>
+    body {
+      font-family: 'Montserrat', Arial, sans-serif;
+      background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+      padding: 2em;
+      min-height: 100vh;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 1.5em;
+      font-weight: 700;
+      color: #222;
+      letter-spacing: 0.01em;
+      text-shadow: 0 2px 8px #fff6;
+    }
+    table.dataTable {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 8px 32px #0002;
+    }
+    table.dataTable thead th {
+      background: #222c;
+      color: #fff;
+      font-weight: 700;
+      font-size: 1.07em;
+      letter-spacing: 0.02em;
+    }
+    table.dataTable tbody tr {
+      transition: background 0.2s;
+    }
+    table.dataTable tbody tr:hover {
+      background: #f0f8ff !important;
+    }
+    .player-link {
+      color: #0074d9;
+      font-weight: 600;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .player-link:hover {
+      color: #005fa3;
+      text-decoration: underline;
+    }
+    .rank-crown {
+      font-size: 1.2em;
+      margin-right: 0.2em;
+    }
+    .fa-trophy {
+      color: #bba31c;
+      margin-left: 0.2em;
+    }
+    @media (max-width: 600px) {
+      body { padding: 0.5em; }
+      h1 { font-size: 1.2em; }
+      table.dataTable { font-size: 0.93em; }
+      #update-time { left: 0.5em; top: 0.5em; font-size: 0.97em;}
+    }
+    .info-bubble {
+      position: relative;
+      display: inline-block;
+    }
+    #update-time {
+      position: absolute;
+      top: 24px;
+      right: 32px;
+      font-size: 1.05em;
+      color: #555;
+      background: rgba(255,255,255,0.7);
+      padding: 4px 12px;
+      border-radius: 8px;
+      box-shadow: 0 1px 4px #0001;
+      z-index: 100;
+      font-family: 'Montserrat', Arial, sans-serif;
+    }
+    .rank-arrow-up {
+      color: #27ae60;
+      font-size: 1.1em;
+      margin-left: 0.2em;
+    }
+    .rank-arrow-down {
+      color: #e74c3c;
+      font-size: 1.1em;
+      margin-left: 0.2em;
+    }
+  </style>
 </head>
 <body>
 <div id="update-time"></div>
@@ -93,40 +102,38 @@
     <tr>
       <th>Rank</th>
       <th>Nom</th>
-      
       <th>W</th>
       <th>L</th>
       <th>D</th>
       <th>Matchs</th>
       <th>
-  Winrate (%)
-  <span class="info-bubble" title="Pourcentage de victoires sur l'ensemble des matchs joués lors des Weekly Draft. (total_wins + 0.5 * total_draws) / total_matches * 100">
-    <i class="fa fa-info-circle"></i>
-  </span>
-</th>
+        Winrate (%)
+        <span class="info-bubble" title="Pourcentage de victoires sur l'ensemble des matchs joués lors des Weekly Draft. (total_wins + 0.5 * total_draws) / total_matches * 100">
+          <i class="fa fa-info-circle"></i>
+        </span>
+      </th>
       <th>#Events
-<span class="info-bubble" title="Nombre total d'événements joués de type Weekly Draft.">
-    <i class="fa fa-info-circle"></i>
-  </span>
-
+        <span class="info-bubble" title="Nombre total d'événements joués de type Weekly Draft.">
+          <i class="fa fa-info-circle"></i>
+        </span>
       </th>
       <th>
-      PerfScore
-      <span class="info-bubble" title="Performance Score, basé sur les performances en pondérant le winrate par le nombre de matchs dans les Weekly Draft. Perf_score = winrate * log(1 + total_matches)">
-    <i class="fa fa-info-circle"></i>
-  </span>
+        PerfScore
+        <span class="info-bubble" title="Performance Score, basé sur les performances en pondérant le winrate par le nombre de matchs dans les Weekly Draft. Perf_score = winrate * log(1 + total_matches)">
+          <i class="fa fa-info-circle"></i>
+        </span>
       </th>
       <th>Points Unity
-          <span class="info-bubble" title="Points de classement, pour tous les formats, sur le site https://unityleague.gg/.">
-    <i class="fa fa-info-circle"></i>
-  </span>
+        <span class="info-bubble" title="Points de classement, pour tous les formats, sur le site https://unityleague.gg/.">
+          <i class="fa fa-info-circle"></i>
+        </span>
       </th>
       <th>
-  Profil Unity
-  <span class="info-bubble" title="Lien direct vers le profil du joueur sur unityleague.gg.">
-    <i class="fa fa-info-circle"></i>
-  </span>
-</th>
+        Profil Unity
+        <span class="info-bubble" title="Lien direct vers le profil du joueur sur unityleague.gg.">
+          <i class="fa fa-info-circle"></i>
+        </span>
+      </th>
     </tr>
   </thead>
   <tbody>
@@ -138,60 +145,75 @@
 <script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
 
 <script>
-  $(document).ready(function() {
-    fetch('leaderboard.json')
-      .then(response => response.json())
-      .then(data => {
-        $('#leaderboard').DataTable({
-          data: data,
-          columns: [
-            { data: "rank",
-                render: function(data, type, row) {
-                  if (data == 1) return "1 👑";
-                  if (data == 2) return "2 🥈";
-                  if (data == 3) return "3 🥉";
-                  return data;
-                } },
-            { data: "name" },
-            { data: "wins" },
-            { data: "losses" },
-            { data: "draws" },
-            { data: "matches" },
-            {  data: "winrate",
-                render: function(data) {
-                  return data.toFixed(1) + " %";
-                } },
-            { data: "limited_events" },
-            { data: "perf_score" },
-            { data: "points" },
-            {data: "profile_url",
-              orderable: false,
-              render: function(data, type, row) {
-                return `<a class="player-link" href="${data}" target="_blank" title="Voir le profil de ${row.name}"><i class="fa fa-external-link-alt"></i> Profil</a>`;
+$(document).ready(function() {
+  fetch('leaderboard.json')
+    .then(response => {
+      if (!response.ok) throw new Error("HTTP status " + response.status);
+      return response.json();
+    })
+    .then(data => {
+      // Affichage de l'heure de mise à jour
+      if (data.length && data[0].update_time) {
+        $('#update-time').text("Dernière mise à jour : " + data[0].update_time);
+      }
+      $('#leaderboard').DataTable({
+        data: data,
+        columns: [
+          { data: "rank",
+            render: function(rank, type, row) {
+              let medal = "";
+              if (rank == 1) medal = " 👑";
+              else if (rank == 2) medal = " 🥈";
+              else if (rank == 3) medal = " 🥉";
+              let arrow = "";
+              if (typeof row.last_rank !== "undefined" && row.last_rank !== null) {
+                if (rank < row.last_rank) arrow = ' <i class="fas fa-arrow-up rank-arrow-up" title="+"></i>';
+                else if (rank > row.last_rank) arrow = ' <i class="fas fa-arrow-down rank-arrow-down" title="-"></i>';
               }
+              return rank + medal + arrow;
             }
-
-          ],
-          pageLength: 100, 
-          responsive: true,
-          order: [[8, 'desc']],
-          language: {
-            search: "🔍 Recherche:",
-            lengthMenu: "Afficher _MENU_ joueurs",
-            info: "Affichage de _START_ à _END_ sur _TOTAL_",
-            paginate: {
-              next: "Suivant",
-              previous: "Précédent"
+          },
+          { data: "name" },
+          { data: "wins" },
+          { data: "losses" },
+          { data: "draws" },
+          { data: "matches" },
+          { data: "winrate",
+            render: function(data) {
+              return data.toFixed(1) + " %";
+            }
+          },
+          { data: "limited_events" },
+          { data: "perf_score" },
+          { data: "points" },
+          { data: "profile_url",
+            orderable: false,
+            render: function(data, type, row) {
+              return `<a class="player-link" href="${data}" target="_blank" title="Voir le profil de ${row.name}"><i class="fa fa-external-link-alt"></i> Profil</a>`;
             }
           }
-        });
-      })
-      .catch(error => {
-        console.error("Erreur de chargement JSON :", error);
-        alert("Impossible de charger les données du leaderboard.");
+        ],
+        pageLength: 100, 
+        responsive: true,
+        order: [[8, 'desc']],
+        language: {
+          search: "🔍 Recherche:",
+          lengthMenu: "Afficher _MENU_ joueurs",
+          info: "Affichage de _START_ à _END_ sur _TOTAL_",
+          paginate: {
+            next: "Suivant",
+            previous: "Précédent"
+          }
+        }
       });
-  });
+    })
+    .catch(error => {
+      console.error("Erreur de chargement JSON :", error);
+      alert("Impossible de charger les données du leaderboard.");
+    });
+});
 </script>
+
 
 </body>
 </html>
