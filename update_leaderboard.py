@@ -50,7 +50,7 @@ def parse_player_profile(url):
                 continue
 
             # Check format and event type
-            if cols[4].text.strip() == "Limited" and "draft" in cols[1].text.lower() and "weekly" in cols[1].text.lower():
+            if cols[4].text.strip() == "Limited" and ("draft" in cols[1].text.lower() and "weekly" in cols[1].text.lower()) or 'prerelease' in cols[1].text.lower():
                 match = re.match(r"(\d+)\s*-\s*(\d+)\s*-\s*(\d+)", cols[6].text.strip())
                 if match:
                     total_wins += int(match.group(1))
@@ -147,6 +147,23 @@ def update_json(df):
 
     # Sauvegarde le classement actuel
     df[cols].to_json('leaderboard.json', orient='records', force_ascii=False, indent=2)
+    
+    # Update last rank 
+    with open('leaderboard.json') as f:
+        current = json.load(f)
+    with open('leaderboard_prev.json') as f:
+        previous = json.load(f)
+
+    # Build a mapping from player_id to previous rank
+    prev_ranks = {p['player_id']: p['rank'] for p in previous}
+
+    # Add last_rank to each player in current leaderboard
+    for p in current:
+        p['last_rank'] = prev_ranks.get(p['player_id'])
+
+    # Save the enriched leaderboard
+    with open('leaderboard.json', 'w') as f:
+        json.dump(current, f, ensure_ascii=False, indent=2)
 
     return df 
 
