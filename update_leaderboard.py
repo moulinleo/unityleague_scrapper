@@ -155,11 +155,11 @@ def update_json(df):
         previous = json.load(f)
 
     # Build a mapping from player_id to previous rank
-    prev_ranks = {p['player_id']: p['rank'] for p in previous}
+    prev_ranks = {p['profile_url']: p['rank'] for p in previous}
 
     # Add last_rank to each player in current leaderboard
     for p in current:
-        p['last_rank'] = prev_ranks.get(p['player_id'])
+        p['last_rank'] = prev_ranks.get(p['profile_url'])
 
     # Save the enriched leaderboard
     with open('leaderboard.json', 'w') as f:
