@@ -50,8 +50,8 @@ def parse_player_profile(url):
                 continue
 
             # Check format and event type
-            if cols[4].text.strip() == "Limited" and ("draft" in cols[1].text.lower() and "weekly" in cols[1].text.lower()) or 'prerelease' in cols[1].text.lower():
-                match = re.match(r"(\d+)\s*-\s*(\d+)\s*-\s*(\d+)", cols[6].text.strip())
+            if cols[6].text.strip() == "Limited" and ("draft" in cols[1].text.lower() and "weekly" in cols[1].text.lower()) or 'prerelease' in cols[1].text.lower():
+                match = re.match(r"(\d+)\s*-\s*(\d+)\s*-\s*(\d+)", cols[3].text.strip())
                 if match:
                     total_wins += int(match.group(1))
                     total_losses += int(match.group(2))
