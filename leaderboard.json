@@ -1,6 +1,21 @@
 [
   {
     "rank": 1,
+    "name": "Laurent Poliakoff",
+    "wins": 33,
+    "losses": 10,
+    "draws": 1,
+    "matches": 44.0,
+    "winrate": 76.1,
+    "limited_events": 14,
+    "perf_score": 289.69,
+    "points": 190,
+    "profile_url": "https://unityleague.gg/player/11244/",
+    "update_time": "2025-09-22 10:25:07",
+    "last_rank": 1
+  },
+  {
+    "rank": 2,
     "name": "Ozan Fincan",
     "wins": 40,
     "losses": 16,
@@ -10,12 +25,12 @@
     "limited_events": 19,
     "perf_score": 288.28,
     "points": 212,
-    "profile_url": "https://unityleague.gg/player/12822/season/eu2025",
-    "update_time": "2025-09-18 10:23:13",
-    "last_rank": 1
+    "profile_url": "https://unityleague.gg/player/12822/",
+    "update_time": "2025-09-22 10:25:07",
+    "last_rank": 2
   },
   {
-    "rank": 2,
+    "rank": 3,
     "name": "Thomas Bijl",
     "wins": 40,
     "losses": 17,
@@ -25,12 +40,12 @@
     "limited_events": 18,
     "perf_score": 285.04,
     "points": 397,
-    "profile_url": "https://unityleague.gg/player/11219/season/eu2025",
-    "update_time": "2025-09-18 10:23:13",
-    "last_rank": 2
+    "profile_url": "https://unityleague.gg/player/11219/",
+    "update_time": "2025-09-22 10:25:07",
+    "last_rank": 3
   },
   {
-    "rank": 3,
+    "rank": 4,
     "name": "Vincent Bichelberger",
     "wins": 33,
     "losses": 18,
@@ -40,12 +55,12 @@
     "limited_events": 16,
     "perf_score": 255.69,
     "points": 160,
-    "profile_url": "https://unityleague.gg/player/11227/season/eu2025",
-    "update_time": "2025-09-18 10:23:13",
-    "last_rank": 3
+    "profile_url": "https://unityleague.gg/player/11227/",
+    "update_time": "2025-09-22 10:25:07",
+    "last_rank": 4
   },
   {
-    "rank": 4,
+    "rank": 5,
     "name": "Emmanuel Delvigne",
     "wins": 23,
     "losses": 9,
@@ -55,12 +70,12 @@
     "limited_events": 9,
     "perf_score": 251.4,
     "points": 541,
-    "profile_url": "https://unityleague.gg/player/16007/season/eu2025",
-    "update_time": "2025-09-18 10:23:13",
-    "last_rank": 4
+    "profile_url": "https://unityleague.gg/player/16007/",
+    "update_time": "2025-09-22 10:25:07",
+    "last_rank": 5
   },
   {
-    "rank": 5,
+    "rank": 6,
     "name": "Thomas Decamp",
     "wins": 39,
     "losses": 28,
@@ -70,12 +85,12 @@
     "limited_events": 20,
     "perf_score": 246.0,
     "points": 367,
-    "profile_url": "https://unityleague.gg/player/11230/season/eu2025",
-    "update_time": "2025-09-18 10:23:13",
-    "last_rank": 5
+    "profile_url": "https://unityleague.gg/player/11230/",
+    "update_time": "2025-09-22 10:25:07",
+    "last_rank": 6
   },
   {
-    "rank": 6,
+    "rank": 7,
     "name": "Aymeric Steinbach",
     "wins": 34,
     "losses": 23,
@@ -85,12 +100,12 @@
     "limited_events": 18,
     "perf_score": 242.61,
     "points": 361,
-    "profile_url": "https://unityleague.gg/player/11248/season/eu2025",
-    "update_time": "2025-09-18 10:23:13",
-    "last_rank": 6
+    "profile_url": "https://unityleague.gg/player/11248/",
+    "update_time": "2025-09-22 10:25:07",
+    "last_rank": 7
   },
   {
-    "rank": 7,
+    "rank": 8,
     "name": "Thomas de Brito",
     "wins": 20,
     "losses": 14,
@@ -100,12 +115,12 @@
     "limited_events": 10,
     "perf_score": 209.99,
     "points": 187,
-    "profile_url": "https://unityleague.gg/player/13948/season/eu2025",
-    "update_time": "2025-09-18 10:23:13",
-    "last_rank": 7
+    "profile_url": "https://unityleague.gg/player/13948/",
+    "update_time": "2025-09-22 10:25:07",
+    "last_rank": 8
   },
   {
-    "rank": 8,
+    "rank": 9,
     "name": "Pierrick Decamp",
     "wins": 20,
     "losses": 23,
@@ -115,12 +130,12 @@
     "limited_events": 13,
     "perf_score": 179.8,
     "points": 217,
-    "profile_url": "https://unityleague.gg/player/12841/season/eu2025",
-    "update_time": "2025-09-18 10:23:13",
-    "last_rank": 8
+    "profile_url": "https://unityleague.gg/player/12841/",
+    "update_time": "2025-09-22 10:25:07",
+    "last_rank": 9
   },
   {
-    "rank": 9,
+    "rank": 10,
     "name": "James Van Hee",
     "wins": 24,
     "losses": 31,
@@ -130,12 +145,12 @@
     "limited_events": 18,
     "perf_score": 178.25,
     "points": 158,
-    "profile_url": "https://unityleague.gg/player/15003/season/eu2025",
-    "update_time": "2025-09-18 10:23:13",
-    "last_rank": 9
+    "profile_url": "https://unityleague.gg/player/15003/",
+    "update_time": "2025-09-22 10:25:07",
+    "last_rank": 10
   },
   {
-    "rank": 10,
+    "rank": 11,
     "name": "Denis Plaksiychuk",
     "wins": 10,
     "losses": 11,
@@ -145,12 +160,12 @@
     "limited_events": 7,
     "perf_score": 147.13,
     "points": 66,
-    "profile_url": "https://unityleague.gg/player/11247/season/eu2025",
-    "update_time": "2025-09-18 10:23:13",
-    "last_rank": 10
+    "profile_url": "https://unityleague.gg/player/11247/",
+    "update_time": "2025-09-22 10:25:07",
+    "last_rank": 11
   },
   {
-    "rank": 11,
+    "rank": 12,
     "name": "Jérôme Gerard",
     "wins": 6,
     "losses": 5,
@@ -160,12 +175,12 @@
     "limited_events": 4,
     "perf_score": 139.02,
     "points": 37,
-    "profile_url": "https://unityleague.gg/player/13958/season/eu2025",
-    "update_time": "2025-09-18 10:23:13",
-    "last_rank": 11
+    "profile_url": "https://unityleague.gg/player/13958/",
+    "update_time": "2025-09-22 10:25:07",
+    "last_rank": 12
   },
   {
-    "rank": 12,
+    "rank": 13,
     "name": "Rene Neuberger",
     "wins": 7,
     "losses": 7,
@@ -175,12 +190,12 @@
     "limited_events": 4,
     "perf_score": 135.4,
     "points": 33,
-    "profile_url": "https://unityleague.gg/player/19408/season/eu2025",
-    "update_time": "2025-09-18 10:23:13",
-    "last_rank": 12
+    "profile_url": "https://unityleague.gg/player/19408/",
+    "update_time": "2025-09-22 10:25:07",
+    "last_rank": 13
   },
   {
-    "rank": 13,
+    "rank": 14,
     "name": "Lucas Mitschi",
     "wins": 12,
     "losses": 19,
@@ -190,12 +205,12 @@
     "limited_events": 9,
     "perf_score": 134.12,
     "points": 63,
-    "profile_url": "https://unityleague.gg/player/12879/season/eu2025",
-    "update_time": "2025-09-18 10:23:13",
-    "last_rank": 13
+    "profile_url": "https://unityleague.gg/player/12879/",
+    "update_time": "2025-09-22 10:25:07",
+    "last_rank": 14
   },
   {
-    "rank": 14,
+    "rank": 15,
     "name": "Damien Gonze",
     "wins": 3,
     "losses": 1,
@@ -205,12 +220,12 @@
     "limited_events": 1,
     "perf_score": 120.71,
     "points": 80,
-    "profile_url": "https://unityleague.gg/player/11214/season/eu2025",
-    "update_time": "2025-09-18 10:23:13",
-    "last_rank": 14
+    "profile_url": "https://unityleague.gg/player/11214/",
+    "update_time": "2025-09-22 10:25:07",
+    "last_rank": 15
   },
   {
-    "rank": 15,
+    "rank": 16,
     "name": "Gaëtan Marchale",
     "wins": 9,
     "losses": 23,
@@ -220,12 +235,12 @@
     "limited_events": 11,
     "perf_score": 113.13,
     "points": 65,
-    "profile_url": "https://unityleague.gg/player/12863/season/eu2025",
-    "update_time": "2025-09-18 10:23:13",
-    "last_rank": 15
+    "profile_url": "https://unityleague.gg/player/12863/",
+    "update_time": "2025-09-22 10:25:07",
+    "last_rank": 16
   },
   {
-    "rank": 16,
+    "rank": 17,
     "name": "Arthur Coenen",
     "wins": 9,
     "losses": 22,
@@ -235,12 +250,12 @@
     "limited_events": 11,
     "perf_score": 112.52,
     "points": 170,
-    "profile_url": "https://unityleague.gg/player/11220/season/eu2025",
-    "update_time": "2025-09-18 10:23:13",
-    "last_rank": 16
+    "profile_url": "https://unityleague.gg/player/11220/",
+    "update_time": "2025-09-22 10:25:07",
+    "last_rank": 17
   },
   {
-    "rank": 17,
+    "rank": 18,
     "name": "Philippe Thorez",
     "wins": 4,
     "losses": 4,
@@ -250,12 +265,12 @@
     "limited_events": 2,
     "perf_score": 109.86,
     "points": 18,
-    "profile_url": "https://unityleague.gg/player/12835/season/eu2025",
-    "update_time": "2025-09-18 10:23:13",
-    "last_rank": 17
+    "profile_url": "https://unityleague.gg/player/12835/",
+    "update_time": "2025-09-22 10:25:07",
+    "last_rank": 18
   },
   {
-    "rank": 18,
+    "rank": 19,
     "name": "Matthew Beck",
     "wins": 1,
     "losses": 0,
@@ -265,12 +280,12 @@
     "limited_events": 1,
     "perf_score": 92.47,
     "points": 8,
-    "profile_url": "https://unityleague.gg/player/18779/season/eu2025",
-    "update_time": "2025-09-18 10:23:13",
-    "last_rank": 18
+    "profile_url": "https://unityleague.gg/player/18779/",
+    "update_time": "2025-09-22 10:25:07",
+    "last_rank": 19
   },
   {
-    "rank": 19,
+    "rank": 20,
     "name": "Martin Alberty",
     "wins": 2,
     "losses": 2,
@@ -280,23 +295,8 @@
     "limited_events": 1,
     "perf_score": 80.47,
     "points": 155,
-    "profile_url": "https://unityleague.gg/player/11217/season/eu2025",
-    "update_time": "2025-09-18 10:23:13",
-    "last_rank": 19
-  },
-  {
-    "rank": 20,
-    "name": "Matthieu Charray",
-    "wins": 1,
-    "losses": 1,
-    "draws": 1,
-    "matches": 3.0,
-    "winrate": 50.0,
-    "limited_events": 1,
-    "perf_score": 69.31,
-    "points": 32,
-    "profile_url": "https://unityleague.gg/player/12263/season/eu2025",
-    "update_time": "2025-09-18 10:23:13",
+    "profile_url": "https://unityleague.gg/player/11217/",
+    "update_time": "2025-09-22 10:25:07",
     "last_rank": 20
   },
   {
@@ -310,12 +310,27 @@
     "limited_events": 1,
     "perf_score": 69.31,
     "points": 279,
-    "profile_url": "https://unityleague.gg/player/11211/season/eu2025",
-    "update_time": "2025-09-18 10:23:13",
+    "profile_url": "https://unityleague.gg/player/11211/",
+    "update_time": "2025-09-22 10:25:07",
     "last_rank": 21
   },
   {
     "rank": 22,
+    "name": "Matthieu Charray",
+    "wins": 1,
+    "losses": 1,
+    "draws": 1,
+    "matches": 3.0,
+    "winrate": 50.0,
+    "limited_events": 1,
+    "perf_score": 69.31,
+    "points": 32,
+    "profile_url": "https://unityleague.gg/player/12263/",
+    "update_time": "2025-09-22 10:25:07",
+    "last_rank": 22
+  },
+  {
+    "rank": 23,
     "name": "Cédrick Austa",
     "wins": 0,
     "losses": 2,
@@ -325,8 +340,8 @@
     "limited_events": 1,
     "perf_score": 23.15,
     "points": 4,
-    "profile_url": "https://unityleague.gg/player/26430/season/eu2025",
-    "update_time": "2025-09-18 10:23:13",
-    "last_rank": 22
+    "profile_url": "https://unityleague.gg/player/26430/",
+    "update_time": "2025-09-22 10:25:07",
+    "last_rank": 23
   }
 ]
