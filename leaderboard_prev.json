@@ -11,7 +11,7 @@
     "winrate":76.1,
     "limited_events":14,
     "matches":44.0,
-    "update_time":"2025-09-25 10:24:16",
+    "update_time":"2025-09-29 10:26:37",
     "perf_score":289.69
   },
   {
@@ -26,7 +26,7 @@
     "winrate":70.7,
     "limited_events":19,
     "matches":58.0,
-    "update_time":"2025-09-25 10:24:16",
+    "update_time":"2025-09-29 10:26:37",
     "perf_score":288.28
   },
   {
@@ -41,7 +41,7 @@
     "winrate":70.2,
     "limited_events":18,
     "matches":57.0,
-    "update_time":"2025-09-25 10:24:16",
+    "update_time":"2025-09-29 10:26:37",
     "perf_score":285.04
   },
   {
@@ -56,7 +56,7 @@
     "winrate":64.4,
     "limited_events":16,
     "matches":52.0,
-    "update_time":"2025-09-25 10:24:16",
+    "update_time":"2025-09-29 10:26:37",
     "perf_score":255.69
   },
   {
@@ -71,7 +71,7 @@
     "winrate":71.9,
     "limited_events":9,
     "matches":32.0,
-    "update_time":"2025-09-25 10:24:16",
+    "update_time":"2025-09-29 10:26:37",
     "perf_score":251.4
   },
   {
@@ -86,7 +86,7 @@
     "winrate":58.1,
     "limited_events":20,
     "matches":68.0,
-    "update_time":"2025-09-25 10:24:16",
+    "update_time":"2025-09-29 10:26:37",
     "perf_score":246.0
   },
   {
@@ -101,7 +101,7 @@
     "winrate":59.5,
     "limited_events":18,
     "matches":58.0,
-    "update_time":"2025-09-25 10:24:16",
+    "update_time":"2025-09-29 10:26:37",
     "perf_score":242.61
   },
   {
@@ -116,11 +116,41 @@
     "winrate":58.6,
     "limited_events":10,
     "matches":35.0,
-    "update_time":"2025-09-25 10:24:16",
+    "update_time":"2025-09-29 10:26:37",
     "perf_score":209.99
   },
   {
     "rank":9,
+    "points":216,
+    "name":"Niels Lucking",
+    "profile_url":"https:\/\/unityleague.gg\/player\/11255\/",
+    "player_id":"11255",
+    "wins":11,
+    "losses":5,
+    "draws":2,
+    "winrate":66.7,
+    "limited_events":5,
+    "matches":18.0,
+    "update_time":"2025-09-29 10:26:37",
+    "perf_score":196.39
+  },
+  {
+    "rank":10,
+    "points":68,
+    "name":"Mattia Miglino",
+    "profile_url":"https:\/\/unityleague.gg\/player\/12820\/",
+    "player_id":"12820",
+    "wins":7,
+    "losses":2,
+    "draws":1,
+    "winrate":75.0,
+    "limited_events":3,
+    "matches":10.0,
+    "update_time":"2025-09-29 10:26:37",
+    "perf_score":179.84
+  },
+  {
+    "rank":11,
     "points":217,
     "name":"Pierrick Decamp",
     "profile_url":"https:\/\/unityleague.gg\/player\/12841\/",
@@ -131,11 +161,11 @@
     "winrate":46.7,
     "limited_events":13,
     "matches":46.0,
-    "update_time":"2025-09-25 10:24:16",
+    "update_time":"2025-09-29 10:26:37",
     "perf_score":179.8
   },
   {
-    "rank":10,
+    "rank":12,
     "points":158,
     "name":"James Van Hee",
     "profile_url":"https:\/\/unityleague.gg\/player\/15003\/",
@@ -146,11 +176,11 @@
     "winrate":43.9,
     "limited_events":18,
     "matches":57.0,
-    "update_time":"2025-09-25 10:24:16",
+    "update_time":"2025-09-29 10:26:37",
     "perf_score":178.25
   },
   {
-    "rank":11,
+    "rank":13,
     "points":66,
     "name":"Denis Plaksiychuk",
     "profile_url":"https:\/\/unityleague.gg\/player\/11247\/",
@@ -161,11 +191,11 @@
     "winrate":47.6,
     "limited_events":7,
     "matches":21.0,
-    "update_time":"2025-09-25 10:24:16",
+    "update_time":"2025-09-29 10:26:37",
     "perf_score":147.13
   },
   {
-    "rank":12,
+    "rank":14,
     "points":37,
     "name":"J\u00e9r\u00f4me Gerard",
     "profile_url":"https:\/\/unityleague.gg\/player\/13958\/",
@@ -176,11 +206,11 @@
     "winrate":54.2,
     "limited_events":4,
     "matches":12.0,
-    "update_time":"2025-09-25 10:24:16",
+    "update_time":"2025-09-29 10:26:37",
     "perf_score":139.02
   },
   {
-    "rank":13,
+    "rank":15,
     "points":33,
     "name":"Rene Neuberger",
     "profile_url":"https:\/\/unityleague.gg\/player\/19408\/",
@@ -191,11 +221,11 @@
     "winrate":50.0,
     "limited_events":4,
     "matches":14.0,
-    "update_time":"2025-09-25 10:24:16",
+    "update_time":"2025-09-29 10:26:37",
     "perf_score":135.4
   },
   {
-    "rank":14,
+    "rank":16,
     "points":63,
     "name":"Lucas Mitschi",
     "profile_url":"https:\/\/unityleague.gg\/player\/12879\/",
@@ -206,11 +236,11 @@
     "winrate":38.7,
     "limited_events":9,
     "matches":31.0,
-    "update_time":"2025-09-25 10:24:16",
+    "update_time":"2025-09-29 10:26:37",
     "perf_score":134.12
   },
   {
-    "rank":15,
+    "rank":17,
     "points":80,
     "name":"Damien Gonze",
     "profile_url":"https:\/\/unityleague.gg\/player\/11214\/",
@@ -221,11 +251,11 @@
     "winrate":75.0,
     "limited_events":1,
     "matches":4.0,
-    "update_time":"2025-09-25 10:24:16",
+    "update_time":"2025-09-29 10:26:37",
     "perf_score":120.71
   },
   {
-    "rank":16,
+    "rank":18,
     "points":65,
     "name":"Ga\u00ebtan Marchale",
     "profile_url":"https:\/\/unityleague.gg\/player\/12863\/",
@@ -236,11 +266,11 @@
     "winrate":31.1,
     "limited_events":11,
     "matches":37.0,
-    "update_time":"2025-09-25 10:24:16",
+    "update_time":"2025-09-29 10:26:37",
     "perf_score":113.13
   },
   {
-    "rank":17,
+    "rank":19,
     "points":170,
     "name":"Arthur Coenen",
     "profile_url":"https:\/\/unityleague.gg\/player\/11220\/",
@@ -251,11 +281,11 @@
     "winrate":31.4,
     "limited_events":11,
     "matches":35.0,
-    "update_time":"2025-09-25 10:24:16",
+    "update_time":"2025-09-29 10:26:37",
     "perf_score":112.52
   },
   {
-    "rank":18,
+    "rank":20,
     "points":18,
     "name":"Philippe Thorez",
     "profile_url":"https:\/\/unityleague.gg\/player\/12835\/",
@@ -266,11 +296,11 @@
     "winrate":50.0,
     "limited_events":2,
     "matches":8.0,
-    "update_time":"2025-09-25 10:24:16",
+    "update_time":"2025-09-29 10:26:37",
     "perf_score":109.86
   },
   {
-    "rank":19,
+    "rank":21,
     "points":8,
     "name":"Matthew Beck",
     "profile_url":"https:\/\/unityleague.gg\/player\/18779\/",
@@ -281,11 +311,11 @@
     "winrate":66.7,
     "limited_events":1,
     "matches":3.0,
-    "update_time":"2025-09-25 10:24:16",
+    "update_time":"2025-09-29 10:26:37",
     "perf_score":92.47
   },
   {
-    "rank":20,
+    "rank":22,
     "points":155,
     "name":"Martin Alberty",
     "profile_url":"https:\/\/unityleague.gg\/player\/11217\/",
@@ -296,11 +326,11 @@
     "winrate":50.0,
     "limited_events":1,
     "matches":4.0,
-    "update_time":"2025-09-25 10:24:16",
+    "update_time":"2025-09-29 10:26:37",
     "perf_score":80.47
   },
   {
-    "rank":21,
+    "rank":23,
     "points":279,
     "name":"Maxime, dit le BG, Corchia",
     "profile_url":"https:\/\/unityleague.gg\/player\/11211\/",
@@ -311,11 +341,11 @@
     "winrate":100.0,
     "limited_events":1,
     "matches":1.0,
-    "update_time":"2025-09-25 10:24:16",
+    "update_time":"2025-09-29 10:26:37",
     "perf_score":69.31
   },
   {
-    "rank":22,
+    "rank":24,
     "points":32,
     "name":"Matthieu Charray",
     "profile_url":"https:\/\/unityleague.gg\/player\/12263\/",
@@ -326,11 +356,11 @@
     "winrate":50.0,
     "limited_events":1,
     "matches":3.0,
-    "update_time":"2025-09-25 10:24:16",
+    "update_time":"2025-09-29 10:26:37",
     "perf_score":69.31
   },
   {
-    "rank":23,
+    "rank":25,
     "points":4,
     "name":"C\u00e9drick Austa",
     "profile_url":"https:\/\/unityleague.gg\/player\/26430\/",
@@ -341,7 +371,7 @@
     "winrate":16.7,
     "limited_events":1,
     "matches":3.0,
-    "update_time":"2025-09-25 10:24:16",
+    "update_time":"2025-09-29 10:26:37",
     "perf_score":23.15
   }
 ]
